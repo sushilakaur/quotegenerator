@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Get Quotes</title>
+        <style>
+            body{
+                background-image: url("flower-01.png");
+                background-size: cover;
+                background-color: rgba(241, 241, 241, 0.747);
+            }
+            input{
+                border : 1px solid rgb(0, 66, 68);
+                padding: 2vh 2vw ;                
+                width: 35vw;
+            }
+            #submit{
+                background-color: rgb(0, 66, 68);
+                width: 10vw !important;
+                border : 1px solid rgb(0, 66, 68);
+                color: ivory;
+                padding: 2vh 2vw ; 
+            }
+            ul li{
+                list-style: none;
+                width: 70%;
+                margin: 2vh;
+                padding: 3vh 5vh;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    </head>
+    <body>
+        <h1 style="background-color: rgb(25, 182, 150); padding: 3vh;">Quotes Searcher!</h1>
+        <center>
+        <form id="form">
+            <input type="text" placeholder="Category of quotes" id="cat">
+            <button id="submit">Search!</button>
+        </form>
+        <ul id="quotes">
+        </ul>
+        </center>
+
+
+        <script src="./quotefinder.js"></script>
+    </body>
+</html>
